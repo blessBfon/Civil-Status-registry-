@@ -1,0 +1,168 @@
+body{
+	
+	  border: 1px white;
+  position: relative;
+  display: flex;
+  margin:0;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:1vh;
+  flex-wrap:wrap;
+      word-wrap: break-word;
+	  background-image:url("sigin.png");
+ 
+}
+
+.container{
+	border : 1px solid black;
+	border-radius:20px;
+	position:relative;
+	flex-wrap:wrap;
+	display:in-block;
+	word-wrap:break-word;
+padding:10px;
+width:700px;
+height:430px;
+top:100px;
+}
+
+strong{
+	position :relative;
+left:300px;
+font-size:24px;
+font-family:Arial;
+height:20px;
+display:flex;
+width:50vw;
+}
+span{
+	display:flex;
+gap:5px;
+animation:blink 1.4s infinite;
+}
+
+.d{
+animation-delay:0s;
+}
+
+
+.d_1{
+animation-delay:0.2s;}
+
+
+.d_2{
+animation-delay:0.4s}
+
+@keyframes blink{
+	0%{
+	opacity:0.2;}
+	
+	20%{
+	opacity:1;}
+	
+	100%{
+	opacity:0.2}
+	
+}
+
+
+input[type="text"]{
+height: 20px;}
+
+input[type="num"]{
+height: 20px;}
+
+input[type="email"]{
+height: 20px;}
+
+input[type="alphanum"]{
+height: 20px;}
+
+input[type="password"]{
+height: 20px;
+}
+
+
+table{
+	position:relative;
+bottom:20px;
+}
+
+input[type="submit"]{
+height: 40px;
+border-radius:5px;
+position:relative;
+border:1px solid transparent;
+font-size:4vh;
+Background-color:white;
+color:#e8a317;
+left:200px;
+
+}
+
+input[type="submit"]:hover{
+height: 40px;
+cursor:pointer;
+outline:#e8a317;
+text-shadow:0px 0px 10px rgba(232,163,23,0.8), 0px 0px 20px rgba(232,163,23,0.6);
+}
+
+#foot{
+	border:1px solid transparent;
+	border-radius:5px;
+	box-shadow:0px 0px 10px rgb(0,0,0,0.2);
+	width:20vw;
+	min-height:6vh;
+	display:none;
+	gap:20px;
+	box-align:bottom;
+	position:fixed;
+	right:280px;
+	color:red;
+	text-shadow:0px 0px 10px rgb(0,0,0,0.2);
+	animation: blink 1s infinite;
+	text-align:center;
+	align-items:center;
+	bottom:30px;
+	left:50px;
+}
+ 
+@keyframes{
+	0%{opacity:1;}
+	50%{opacity:0;}
+100%{opacity:1;}
+}
+
+
+#foot:hover{
+	box-shadow:0px 10px 20px rgb(0,0,0,0.2);
+	animation:blink 0s;
+}
+
+   #loader {
+      display: none;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+	  bottom:50%;
+	  top:50%;
+	  left:50%;
+	  right:50%;
+	  z-index:10000;
+	  position:fixed;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    #result {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+    }

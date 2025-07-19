@@ -1,0 +1,132 @@
+<!DOCTYPEhtml><html lang="en-Us"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Creating a Civil Status Account</title>
+<link rel = "Icon" type = "image/x-icon"  href ="sign.png"/>
+<link rel = "stylesheet" text = "type/css" href = "Sign.css"/>
+</head>
+<body><section class ="container">
+
+<strong> Sign up
+<span id="dots">
+<span class="d">.</span>
+<span class="d_1">.</span>
+<span class="d_2">.</span>
+</span>
+</strong>
+
+
+<form action ="" type = "" enctype = "multipart/ form-data" onsubmit = "return Account_Verification()" 
+method = "post"><p>
+<table border="0" cellspacing="8px" cellpadding="2px">
+<tr></tr>
+<tr></tr>
+
+<tr>
+<td width="300px">
+<label for ="name"> 
+First Name <input type = "text" title ="Enter information as it is on National id card" name ="username" 
+value="" placeholder="Fisrt Name" id = "FN" - required="require" autocomplete="false">
+</td></label>
+<td>
+<label for ="Id_number">Identification Number 
+<input type="alphanum" title ="Enter information as it is on National id card" name="id_num" 
+ required="required" placeholder="17-digit number" id = "IDN" autocomplete="false"/>
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+ Last Name <input type = "text" title ="Enter information as it is on National id card"
+ name ="username_2" value="" placeholder="Fisrt Name" required="require" id = "LN" autocomplete="false">
+</td>
+</label>
+<td>
+<label for ="Password">Password 
+<input id="PWD"  type="password" name= "pwd" value="" 
+required="required" placeholder="Password" autocomplete ="false"/>
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for = "POB">
+Place of Birth <input type ="text" title ="Enter information as it is on National id card"
+ name ="POB" required="required" id="POB" placeholder="Region of Birth"/>
+</label>
+</td>
+<td>
+<label for ="Password">Confirm Password
+ <input  type="password" id="CPWD" name= "cpwd" value="" 
+ required="required" placeholder="Password" autocomplete ="false"/>
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for ="DOB">
+Date of Birth <input type = "Date" 
+title ="Enter information as it is on National id card" id = "DOB" name = "DOB" required = "required"/>
+</label>
+</td>
+<td>
+<label for = "Tel">Telephone number
+ <input id="TEL" type ="num" name="tel" required="required" placeholder="+237" autocomplete = "false"/> 
+</td>
+</tr>
+
+<tr>
+<td>
+<label for ="mail">Email address
+<input type="email" name = "email" id="E_" required="required" placeholder ="Email Address"/>
+</label>
+</td>
+<td>
+<label for ="age">
+<input type="checkbox" id = "CHAGE" name="age" value="" required ="required"/>I am 22 years and above.
+</label>
+</td>
+</tr>
+<div id="loader"></div>
+<tr>
+</tr>
+
+<tr>
+<td><label for ="national_id">Upload a clear copy of National Id (Both sides in 1 file)
+<input type = "file" accept="image/jpeg, image/png"/></label>
+</label></td>
+<td>
+<label for="gender">Gender <input type="radio" id= "GEN" name="gender" value="male" required="required"/>Male
+<input type="radio" name="gender" value="female" id="GENF"  required="required"/>Female
+</label></td>
+</tr>
+
+<tr>
+<td>
+<label for="pic"> Upload a 4x4 Picture of Identifiant 
+<input type="file" accept="imahe/jpeg,image/png" title="Dimension must be 4X4"/>
+</label>
+</td>
+<td><label for ="other"><input type="checkbox" name="other" id = "CHINF" value="False" required="required"/>
+Information Provided are accurate and it is as on my National Id
+</label>
+</td>
+</label>
+
+</table>
+
+
+<label for ="terms_conditions">
+<input type="checkbox" name="terms_condition"  required="required"/>I accept the following
+ <a href="terms and conds.html">Terms and Conditions</a>
+
+
+<label for="Submit">
+<input type="submit" value="Sign up" id="btn" name="submit_info"/></label>
+</form>
+<div id ="foot"></div>
+<script src = "Sign.js"></script>
+
+</section></body>
+</html>

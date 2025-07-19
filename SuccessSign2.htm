@@ -1,0 +1,51 @@
+<?php
+//session continues
+session_start();
+
+if(!isset($_SESSION['user_ident']))
+{header("Location:login.php");}
+exit;
+?>
+
+
+
+
+
+
+<!DOCTYPEhtml>
+<html lang="en-Us">
+<head>
+<meta charset="UTF-8">
+
+<!-- this meta tag below is for after refresh an redirection after 2s -->
+<meta  http-equiv="refresh" content="2;url=Marriagepage_1.php">
+<!--tag above----->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>@Sent</title>
+<link rel = "Icon" type = "image/x-icon"  href ="favicon.ico"/>
+<link rel = "stylesheet" text = "type/css" href = "SuccesSign.css"/>
+<script>
+//blocking back button
+history.pushState(null,null,location.href);
+window.onpopstate = function(){
+	history.go(1);
+};
+</script>
+</head>
+
+<body>
+<section class ="container">
+
+<div id = "Box">
+<img src = "success.jpg" alt="OK"/>
+<label id ="text"> 
+Details Sent.
+
+<br> Await validation after some days and if found valid 
+you would recieve your secret identifier code through mail or sms.
+</label>
+</div>
+
+</section>
+</body>
+</html>

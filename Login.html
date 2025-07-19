@@ -1,0 +1,70 @@
+<!DOCTYPEhtml><html lang="en-Us"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login into Civil Status Account</title>
+<link rel = "Icon" type = "image/x-icon"  href ="Login.jpg"/>
+<link rel = "stylesheet" text = "type/css" href = "login.css?v=1.2"/>
+<style>
+#loader {
+      display: none;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+	  bottom:50%;
+	  top:50%;
+	  left:50%;
+	  right:50%;
+	  z-index:1000;
+	  position:absolute;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+
+</style>
+</head>
+
+<body>
+<section class ="container">
+
+<form action = "" method = "post" enctype = "multipart/form-data" onsubmit = "return Verifi_()">
+
+<label for ="login" >
+<strong>Login</strong>
+</label>
+<div id="loader"></div>
+<p>
+<strong>Identifier</strong>
+<input type = "alphanum" title = "Enter identifier" required="required" name = "identifier_" 
+autocomplete="false" id ="identifier_" value=""/>
+
+<label>
+<p>
+<strong>Password</strong>
+<input type="password" name="pwd" autocomplete="false" 
+required="required" title="Enter password" id="pwd_"/>
+</label>
+<!-- Collecting the type that was sent from the homepage -->
+<input type = 'hidden' name = "certificate_type" />
+<p>
+<i>Forgot password? Do you want to 
+<a href="recoverPassword.html">recover</a> or 
+<a href="resetPassword.html">reset</a>.
+</i>
+
+<button type = "submit" id = "login_btn" name="submit_btn">Login</button>
+</form>
+
+<footer>
+Don't have account <a href="http://localhost/CIVIL%20STATUS%20REGISTRY/Sign-up.html">Sign up </a> instead.
+</footer>
+<div id ="foot"></div>
+<script src="login.js"></script>
+</section>
+</body>
+</html>

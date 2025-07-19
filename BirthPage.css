@@ -1,0 +1,100 @@
+h1,h2{
+	text-align: center;
+	font-family:Verdana;
+}
+#line{
+	border:1px solid grey;
+	width:50vw;
+		box-shadow:0px 0px 10px rgb(0,0,0,0.2);
+}
+
+input{
+font-size:2.5vh;}
+
+input[type="text"]{
+	height:5vh;
+	width:30vw;
+	
+}
+
+input[type="date"]{
+	height:5vh;
+}
+
+select{
+	height:6vh;
+	border:1px solid ;
+	border-top:transparent;
+	border-left:transparent;
+	border-right:transparent;
+	border-radius:10px;
+	padding:10px;
+}
+
+#foot{
+	border:1px solid transparent;
+	border-radius:5px;
+	box-shadow:0px 0px 10px rgb(0,0,0,0.2);
+	width:20vw;
+	height:5vh;
+	display:none;
+	gap:20px;
+	box-align:bottom;
+	position:fixed;
+	right:280px;
+	color:red;
+	text-shadow:0px 0px 10px rgb(0,0,0,0.2);
+	animation: blink 1s infinite;
+	text-align:center;
+	align-items:center;
+	bottom:30px;
+	left:50px;
+}
+ 
+@keyframes{
+	0%{opacity:1;}
+	50%{opacity:0;}
+100%{opacity:1;}
+}
+
+
+#foot:hover{
+	box-shadow:0px 10px 20px rgb(0,0,0,0.2);
+	animation:blink 0s;
+}
+select:focus{
+	cursor:pointer;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2)
+}
+
+
+
+input[type="num"]{
+	height:5vh;
+	width:25vw;
+}
+
+
+input[type="submit"]{
+	border:5px solid #fdd017;
+	height:6.5vh;
+	font-size:3vh;
+	color:#fdd017;
+	background-color:white;
+	border-radius:10px;
+	width:20vw;
+	display :flex;
+	float:right;
+}
+
+
+input[type="submit"]:hover{
+	color:white;
+	cursor:pointer;
+	background-color:#fdd017;
+box-shadow:0px 0px 10px #fdd017;
+}
+
+input[type="checkbox"],input[type="radio"]{
+	transform:scale(1.5);
+}
