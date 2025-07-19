@@ -103,7 +103,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## 🙌 Author
 
->  [Drax_@example.com](mailto\:Drax_@gmail.com) • [GitHub](https://github.com/Drax_)
+>  [Drax_@example.com](mailto\:80drax80@gmail.com) • [GitHub](https://github.com/Drax_)
 
 ---
 
